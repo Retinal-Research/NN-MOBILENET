@@ -17,6 +17,10 @@ Over the past few decades, convolutional neural networks (CNNs) have been at the
 <img src="image/table4.png"/>
 
 
+We also brought this model to [MICCAI MMAC 2023](https://codalab.lisn.upsaclay.fr/competitions/12477), and won the 3rd.
+
+<img src="image/table5.png"/>
+
 ### This repository will be maintained and updated! Stay Tuned!
 We will appreciate any suggestions and comments. If you find this code helpful, please cite our papers. Thanks! 
 ```
