@@ -438,7 +438,7 @@ def main(args):
                             loss_scaler=loss_scaler, epoch="best", model_ema=model_ema)
                 print(f'Max kappa: {max_accuracy:.4f}%')
                 
-            elif args.main_eval == 'avarage':
+            elif args.main_eval == 'average':
                 
                 temp = (test_stats["kappa"] + test_stats["f1"] + test_stats["spec"]) / 3
                 
@@ -448,7 +448,7 @@ def main(args):
                         utils.save_model(
                             args=args, model=model, model_without_ddp=model_without_ddp, optimizer=optimizer,
                             loss_scaler=loss_scaler, epoch="best", model_ema=model_ema)
-                print(f'Max avarage: {max_accuracy:.4f}%')
+                print(f'Max average: {max_accuracy:.4f}%')
                 
                 
             else:
@@ -510,7 +510,7 @@ def main(args):
                         print(f'Max kappa : {max_accuracy_ema:.4f}%')
                     log_stats.update({**{f'test_{k}_ema': v for k, v in test_stats_ema.items()}})
 
-                elif args.main_eval == 'avarage':
+                elif args.main_eval == 'average':
                     temp = (test_stats["kappa"] + test_stats["f1"] + test_stats["spec"]) / 3
                     if max_accuracy_ema < temp:
                         max_accuracy_ema = temp
@@ -518,7 +518,7 @@ def main(args):
                             utils.save_model(
                                 args=args, model=model, model_without_ddp=model_without_ddp, optimizer=optimizer,
                                 loss_scaler=loss_scaler, epoch="best-ema", model_ema=model_ema)
-                        print(f'Max avarage : {max_accuracy_ema:.4f}%')
+                        print(f'Max average : {max_accuracy_ema:.4f}%')
                     log_stats.update({**{f'test_{k}_ema': v for k, v in test_stats_ema.items()}})
 
                 else:
