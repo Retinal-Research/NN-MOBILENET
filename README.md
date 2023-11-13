@@ -26,7 +26,7 @@ In main.py -> ImageNet pretrained weight
     model.load_state_dict(torch.load('rexnet_3.0.pth'),strict=False)
 ........
 ```
-rexnet_3.0.pth download from [Google Drive](https://drive.google.com/file/d/1COB7eKY4VAS9QOnpBLTg4wxW27U3RFSy/view?usp=sharing) 
+rexnet_3.0.pth download from [Google Drive](https://drive.google.com/file/d/1COB7eKY4VAS9QOnpBLTg4wxW27U3RFSy/view?usp=sharing) Or [Rexnet Official repo](https://github.com/clovaai/rexnet)  
 
 <img src="image/table5.png"/>
 
