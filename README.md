@@ -19,12 +19,13 @@ Over the past few decades, convolutional neural networks (CNNs) have been at the
 
 We also brought this model to [MICCAI MMAC 2023](https://codalab.lisn.upsaclay.fr/competitions/12477), and won the 3rd.
 
-
+```
 .......
 In main.py -> ImageNet pretrained weight 
     model = ReXNetV1(width_mult=3.0,classes=args.nb_classes,dropout_path=args.drop_path)
     model.load_state_dict(torch.load('rexnet_3.0.pth'),strict=False)
 ........
+```
 rexnet_3.0.pth download from [Google Drive](https://drive.google.com/file/d/1COB7eKY4VAS9QOnpBLTg4wxW27U3RFSy/view?usp=sharing) 
 
 <img src="image/table5.png"/>
