@@ -289,7 +289,7 @@ def main(args):
     #     )
 
     model = ReXNetV1(width_mult=3.0,classes=args.nb_classes,dropout_path=args.drop_path)
-    model.load_state_dict(torch.load('pretrain-weight/rexnetv1_1.0.pth'),strict=False)
+    #model.load_state_dict(torch.load('pretrain-weight/rexnetv1_1.0.pth'),strict=False)
     model.load_state_dict(torch.load('rexnet_3.0.pth'),strict=False)
 
     
