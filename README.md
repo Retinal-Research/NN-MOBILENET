@@ -17,6 +17,18 @@ Over the past few decades, convolutional neural networks (CNNs) have been at the
 <img src="image/table4.png"/>
 
 
+Single-GPU 
+```
+python main.py  --input_size 224 --drop_path 0.2 
+
+```
+
+Multi-GPU
+```
+ python -m torch.distributed.launch --nproc_per_node=8 main.py  --input_size 224 --drop_path 0.2
+```
+
+
 We also brought this model to [MICCAI MMAC 2023](https://codalab.lisn.upsaclay.fr/competitions/12477), and won the 3rd.
 
 ```
