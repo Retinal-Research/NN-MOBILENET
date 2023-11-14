@@ -25,7 +25,7 @@ python main.py  --input_size 224 --drop_path 0.2
 
 Multi-GPU
 ```
- python -m torch.distributed.launch --nproc_per_node=8 main.py  --input_size 224 --drop_path 0.2
+python -m torch.distributed.launch --nproc_per_node=4 main.py --batch_size 24 --lr 1e-3 --update_freq 1 --weight_decay 0.005 --min_lr 1e-6 --input_size 512 --drop_path 0.21 --data_set MICCAI --nb_classes 5 --warmup_epochs 20 --epochs 1000 --main_eval avarage --cutmix 1.0 --opt adamp --mixup 0.8 --log_dir Experiment/size_512_dp_0.21_DataArg_True/fold_5/log --output_dir Experiment/size_512_dp_0.21_DataArg_True/fold_5 --fold_train kfold_csv/train_fold_5.csv --fold_test kfold_csv/test_fold_5.csv
 ```
 
 
