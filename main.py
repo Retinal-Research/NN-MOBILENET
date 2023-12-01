@@ -23,9 +23,7 @@ from dataset import build_dataset
 from engine import train_one_epoch,evaluate
 from model.resnext import ReXNetV1
 from model.rexnetv2 import ReXNetV2
-from model.mpvit import mpvit_base
 
-from model.convnext import convnext_base,convnext_large,convnext_small,convnext_tiny,convnext_xlarge
 from utils import NativeScalerWithGradNormCount as NativeScaler
 import utils
 
@@ -279,25 +277,10 @@ def main(args):
             prob=args.mixup_prob, switch_prob=args.mixup_switch_prob, mode=args.mixup_mode,
             label_smoothing=args.smoothing, num_classes=args.nb_classes)
 
-    # model = create_model(
-    #     args.model, 
-    #     pretrained=False, 
-    #     num_classes=args.nb_classes, 
-    #     drop_path_rate=args.drop_path,
-    #     layer_scale_init_value=args.layer_scale_init_value,
-    #     head_init_scale=args.head_init_scale,
-    #     )
-
     model = ReXNetV1(width_mult=3.0,classes=args.nb_classes,dropout_path=args.drop_path)
-    #model.load_state_dict(torch.load('pretrain-weight/rexnetv1_1.0.pth'),strict=False)
     model.load_state_dict(torch.load('rexnet_3.0.pth'),strict=False)
 
-    
-    #model = mpvit_base(num_classes=5)
 
-    #input = torch.randn(1,3,512,512)
-    #checkpoint = torch.load('pretrain_weight/mpvit_base.pth')
-    #model.load_state_dict(checkpoint["model"],strict=False)
     model.to(device)
 
     model_ema = None
