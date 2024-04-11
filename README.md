@@ -2,7 +2,7 @@
 
 Code for the paper [nnMobileNe: Rethinking CNN for Retinopathy Research](https://arxiv.org/abs/2306.01289)
 
-### This repository will be maintained and updated! Stay Tuned!
+## This repository will be maintained and updated! Stay Tuned!
 We will appreciate any suggestions and comments. If you find this code helpful, please cite our papers. Thanks! 
 ```
 @misc{zhu2024nnmobilene,
