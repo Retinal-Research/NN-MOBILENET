@@ -1,6 +1,6 @@
 # NNMOBILE-NET 
 
-Code for the paper [nnMobileNet: Rethinking CNN for Retinopathy Research](https://arxiv.org/abs/2306.01289)
+Code for the paper [nnMobileNet: Rethinking CNN for Retinopathy Research](https://openaccess.thecvf.com/content/CVPR2024W/DCAMI/papers/Zhu_nnMobileNet_Rethinking_CNN_for_Retinopathy_Research_CVPRW_2024_paper.pdf)
 
 ## This repository will be maintained and updated! Stay Tuned!
 We will appreciate any suggestions and comments. If you find this code helpful, please cite our papers. Thanks! 
