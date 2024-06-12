@@ -5,13 +5,13 @@ Code for the paper [nnMobileNet: Rethinking CNN for Retinopathy Research](https:
 ## This repository will be maintained and updated! Stay Tuned!
 We will appreciate any suggestions and comments. If you find this code helpful, please cite our papers. Thanks! 
 ```
-@misc{zhu2024nnmobilene,
-      title={nnMobileNe: Rethinking CNN for Retinopathy Research}, 
-      author={Wenhui Zhu and Peijie Qiu and Xiwen Chen and Xin Li and Natasha Lepore and Oana M. Dumitrascu and Yalin Wang},
-      year={2024},
-      eprint={2306.01289},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@InProceedings{Zhu_2024_CVPR,
+    author    = {Zhu, Wenhui and Qiu, Peijie and Chen, Xiwen and Li, Xin and Lepore, Natasha and Dumitrascu, Oana M. and Wang, Yalin},
+    title     = {nnMobileNet: Rethinking CNN for Retinopathy Research},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {2285-2294}
 }
 ```
 ##
