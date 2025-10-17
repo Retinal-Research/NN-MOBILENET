@@ -52,6 +52,40 @@ python -m torch.distributed.launch --nproc_per_node=4 main.py --batch_size 24 --
 ```
 
 
+
+## 🏆 Competitions and Awards
+
+- **MICCAI 2025 – Multi-Camera Robust Diagnosis of Fundus Diseases (MuCaRD) Challenge**
+
+  *Held from June 30 to August 30, 2025 — organized by Mediwhale and MICCAI Society*
+
+  🥇 **Top-Ranked Team**
+
+<img src="image/image-20251017022226879.png" alt="image-20251017022226879" style="zoom: 50%;" />
+
+
+
+
+
+
+
+- **MICCAI 2024 – Ultra-Widefield Fundus Imaging for Diabetic Retinopathy (UWF-4DR) Challenge**
+
+  *27th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2024)*
+
+  - 🏅**Outstanding Contribution Award**
+  - 🥉 **Third Place – Image Quality Assessment for Ultra-Widefield Fundus**
+  - 🥉 **Third Place – Identification of Diabetic Macular Edema**
+
+  
+
+
+
+<img src="image/image-20251017021657463.png" alt="image-20251017021657463" style="zoom: 25%;" /><img src="image/image-20251017021731540.png" alt="image-20251017021731540" style="zoom: 25%;" />
+
+<img src="image/image-20251017021826602.png" alt="image-20251017021826602" style="zoom: 25%;" />
+
+
   ## License
 
   Released under the [ASU GitHub Project License](https://github.com/Retinotopy-mapping-Research/DRRM/blob/master/LICENSE.txt).
